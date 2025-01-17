@@ -21,3 +21,9 @@ $rotas = [
     'login' => 'login.php',
     'home' => 'home.php'
 ];
+
+if (!key_exists($rota, $rotas)){
+    die('Acesso negado!');
+} 
+
+    require_once $rotas [$rota];
